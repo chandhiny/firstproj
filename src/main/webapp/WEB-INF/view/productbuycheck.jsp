@@ -21,9 +21,9 @@
        	<td><form:label path = "quantity">quantity</form:label></td>
               </tr>
 	
-  <c:forEach items="${productlist}" var="p">
+  <c:forEach items="${productlist}" var="p" varStatus="status" >
    <tr>
- <td><form:input value="${p.productname}" placeholder="${p.productname}" path = "productname" name="productname" id="productname" /></td>
+ <td><form:input value="${p.productname}" placeholder="${p.productname}" path = "productname" name="productlist[${status.index}].productname" id="productname" /></td>
  <td><form:input path="quantity" name="quantity" id="quantity" /></td>
   </tr>   
   </c:forEach>

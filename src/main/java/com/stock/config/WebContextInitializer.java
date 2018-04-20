@@ -10,7 +10,7 @@ public class WebContextInitializer extends AbstractAnnotationConfigDispatcherSer
 	
 	@Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] { StockConfig.class };
+        return null;
     }   
     @Override
     protected String[] getServletMappings() {
